@@ -1,0 +1,95 @@
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("https://lh3.googleusercontent.com/pw/AIL4fc_vAb3x5yThygxPh4C6J8Xx4IKnwcsTGXnGC1FxR2MyE7au9a67uyLHqU4njmbzY1422xBMwYWh3osHBm7yZhYWAltoshj2p_rXh7sEvv4CciJM2Yu52Iqk0bSuSLdgLOvndTcZQbKXcwy4yyIbPlN-xkgJnQ74R3M3beQNsQWS65mzg6Y9IyO5XbEvriVI-J11qxx95-eUjDF-qnmOGaN6N-c43deIVNnPcOUOBbwAcvJhs8_LuEN76jn8VYdNfvkIiD1J_ZOi0ODvVlKExwk8HLIDrbJ6RUa1UMKdFoJaHoNbPZEDqlxYvUoYkKhUd7ZiG8ai3cbEHlb4guehPRg8AtquSiFyZXsASQIZ1X8gp6TNXCq-_GkZgRWpXcJE2aA11STKg385n_jYkMW1g0oaHVzuTXAIN8qUuKe7h1sEfl8zhOa6Du7hDcC9UpT7PWnba09WcRn90n3nrBS9BVGxOPvY9rAw8R0o8CZUUDAFbePGhLHVaWRhuZWRj5Y_NsqNxIPTjKl8Ru-k58pjWrKaP6C4HFaHOhg7wRSQVCKUHXJkJ9OsoLfQJfETFtcpforNiH3Jcm2IwzpW-9v_73oTACZOoWTNuDRWGEZpr4H82rJeNvGXqZnzvaUcUccG9yQ9gc3D-rcgKXMRXC5YZFK0HVBL4Lh3YJXGr0BOnEKX_CVqAOVXmO37u3PfYJIiSS0z9s9MfgUMi2LBUm6klKz_hRGy7zDstvl6P38oZhLWb4gnwuOFBgGm7UngyNrwevzhMmSA_g0DH83LK3hhUsyk899j5Z8eC4D56j938wNePPNwA7BNRxugFezhXv2UI7y3jpeA0jg7reGp2eIpjXkusgpuziZ67YhMFq_o_VP5xFt7lrkDAoxzPtCx7qeETZQ6xkxun_WQxyDO5BCNsg=w1020-h933-s-no?authuser=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpeg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
